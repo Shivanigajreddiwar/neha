@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My-Profile</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        header {
+            background-image: linear-gradient(black,white);
+            border:1px solid gray;
+            box-shadow: 2px 2px 2px gray;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .title {
+            font-weight: bold;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 40px;
+            margin-left: 30px;
+        }
+        .nav-bar {
+            display: flex;
+            }
+        .nav-bar {
+            margin-right: 30px;
+            font-size: 23px;
+            font-family: Arial;
+            font-weight: bold;
+            background-color:blanchedalmond;
+            color:white;
+            padding:5px;
+            border:solid 2px red;
+            border-radius: 20px;
+            transition:2s;
+            display:inline;
+        }
+        
+        .nav-bar div:hover{
+            background-color:black;
+            color:#f2e639;
+            cursor:grab;
+            font-size:20px;
+            transition:2s;
+        }
+        .banner {
+            margin-top: 5px;
+            box-shadow: 2px 2px 2px gray;
+            border:1px solid gray;
+            background-image: url("/Portfolio-Imgs.jpg ") ;
+            background-repeat: no-repeat;
+            background-size: cover;
+          
+        }
+        .side-panel {
+            font-size: 30px;
+            font-family: Arial;
+            text-align: center;
+            width: 700px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+            padding: 30px;
+            color:white;
+             }
+        .shiv{
+            display:flex;
+            justify-content:space-between;
+            margin:20px;
+                } 
+        .box{
+           background-color:black;
+           color:wheat;
+           width:450px;
+           height:250px;
+           border-radius: 20px;
+           padding: 15px;
+
+        }
+        .box:target{
+            background-color:teal;
+            color:black;
+        }
+        #About{ 
+            border:2px solid black;
+            color :white;
+            text-decoration: none;
+        }
+        #project{
+            border:2px solid black;
+            color:white;
+            text-decoration: none;
+        }
+        #Services{
+            border:2px solid black;
+            color:white;
+            text-decoration: none;
+        }
+        .nav-bar ul li{
+            display:inline;
+            margin-right:20px;
+        }
+        .box h1{
+            text-align:center;
+            margin-bottom:10px;
+        }
+        
+    </style>
+</head>
+<body class="container-fluid">
+    <header>
+        <div class="title">
+            PortFolio
+        </div>
+        <div class="nav-bar">
+            <ul>
+            <li><a href="#Home" a>home </a></li>
+            <li><a href="#About" a>About</a></li>
+            <li><a href="#Services" a>Services</a></li>
+            <li><a href="#project"a>My project</a></li>
+        </ul>
+    </header>
+    <div class="banner">
+       <div class="side-panel">
+         <div>
+            <h1><b style="color:crimson">Hii I am Shivani.. </b></h1>
+            <p><b style="color:crimson">WEB DEVLOPER</b></p>
+            <div>
+                <button class="btn btn-danger">Sigin</button>
+                <button class="btn btn-warning">Register</button>
+            </div>
+         </div>
+       </div>
+    </div>
+    <div class="shiv">
+        <div id="About" class="box">
+            <h1>About</h1>
+            <p><b>Hii I Am Shivani Gajreddiwar.I am a UI DEVELOPER and Front End Develper</b> from Maharashtra, Chandrapur.
+                I enjoy taking complex problems and turning them into simple and beautiful interface designs.
+                I also love the logic and structure of coding and always strive to write elegant and efficient code.
+                whether it a HTML, CSS,OR JQUERY.
+             </p>
+            
+            </div>
+        <div id="Services" class="box">
+        <h1>Services</h1>
+        <p>Unique and Attractive Design | Leading Web-Development Agency | 100+ Clients Across Globe. 
+            Web Development Company | Corporate websites
+          | E-Commerce websites | Blogs and magazines.
+          Custom UI Design. Maintenance Support. 
+            Ecommerce & Business Site.</p>
+            </div>
+     <div  id="project" class="box">
+        <h1>My Projects</h1>
+            <a href="fashion.html"> Fasion</a><br>
+            <a href="flipcart footer .html">flipcart</a><br>
+            <a href="form bootstrap clssses.html">forms</a>
+        </div>
+</div>
+</body>
+</html>
